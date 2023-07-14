@@ -51,7 +51,13 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "standalone": true,
+      "skipTests": true,
+      "changeDetection": "OnPush"
+    },
+    "@nx/angular:service": {
+      "skipTests": true
     }
   },
   "defaultProject": "angular-mediator-pattern"

@@ -1,0 +1,6 @@
+<label for="postalCode">Delivery Postal Code</label>
+<input
+  id="postalCode"
+  [ngModel]="postalCode$ | async"
+  (ngModelChange)="postalCode.next($event)"
+/>
